@@ -122,10 +122,14 @@
 	</ItemGroup>
 	<ItemGroup>
 		<Folder Include="Resources\" />
+		<Folder Include="ViewController\" />
+		<Folder Include="Storyboard\" />
+		<Folder Include="Extension\" />
+		<Folder Include="Coodinator\" />
 	</ItemGroup>
 	<ItemGroup>
-		<InterfaceDefinition Include="LaunchScreen.storyboard" />
-		<InterfaceDefinition Include="Main.storyboard" />
+		<InterfaceDefinition Include="Storyboard\Main.storyboard" />
+		<InterfaceDefinition Include="Storyboard\LaunchScreen.storyboard" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Info.plist" />
@@ -135,23 +139,23 @@
 		<Compile Include="Main.cs" />
 		<Compile Include="AppDelegate.cs" />
 		<Compile Include="SceneDelegate.cs" />
-		<Compile Include="ViewController.cs" />
-		<Compile Include="ViewController.designer.cs">
-			<DependentUpon>ViewController.cs</DependentUpon>
+		<Compile Include="ViewController\ViewController.cs" />
+		<Compile Include="ViewController\ViewController.designer.cs">
+		  <DependentUpon>ViewController.cs</DependentUpon>
 		</Compile>
-		<Compile Include="ICoodinator.cs" />
-		<Compile Include="IStoryboarded.cs" />
-		<Compile Include="StoryboardedExtension.cs" />
-		<Compile Include="MainCoodinator.cs" />
-		<Compile Include="FirstViewController.cs" />
-		<Compile Include="FirstViewController.designer.cs">
+		<Compile Include="ViewController\FirstViewController.cs" />
+		<Compile Include="ViewController\FirstViewController.designer.cs">
 		  <DependentUpon>FirstViewController.cs</DependentUpon>
 		</Compile>
-		<Compile Include="SecondViewController.cs" />
-		<Compile Include="SecondViewController.designer.cs">
+		<Compile Include="ViewController\SecondViewController.cs" />
+		<Compile Include="ViewController\SecondViewController.designer.cs">
 		  <DependentUpon>SecondViewController.cs</DependentUpon>
 		</Compile>
-		<Compile Include="ICoodinatedViewController.cs" />
+		<Compile Include="Extension\IStoryboarded.cs" />
+		<Compile Include="Extension\StoryboardedExtension.cs" />
+		<Compile Include="Coodinator\MainCoodinator.cs" />
+		<Compile Include="Coodinator\ICoodinator.cs" />
+		<Compile Include="Coodinator\ICoodinatedViewController.cs" />
 	</ItemGroup>
 	<Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
