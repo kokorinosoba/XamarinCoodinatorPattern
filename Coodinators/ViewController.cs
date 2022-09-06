@@ -1,11 +1,12 @@
-﻿using Foundation;
-using System;
+﻿using System;
 using UIKit;
 
 namespace Coodinators
 {
-    public partial class ViewController : UIViewController
+    public partial class ViewController : UIViewController, ICoodinatedViewController
     {
+        public WeakReference<MainCoodinator>? Coodinator { get; set; }
+
         public ViewController(IntPtr handle) : base(handle)
         {
         }
