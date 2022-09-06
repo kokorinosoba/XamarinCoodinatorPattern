@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,27 +15,27 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dtG-Vt-wft">
-                                <rect key="frame" x="41.5" y="385.5" width="331.5" height="125"/>
+                                <rect key="frame" x="20" y="280.5" width="335" height="106"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rN3-4t-cF4">
-                                        <rect key="frame" x="0.0" y="0.0" width="331.5" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="43"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="FirstViewController" cornerStyle="capsule">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="FirstViewControllerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfm-Lr-BWX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zm-nz-Rp9">
-                                        <rect key="frame" x="0.0" y="72.5" width="331.5" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="63" width="335" height="43"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="SecondViewController" cornerStyle="capsule">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="SecondViewControllerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZG-fr-4AH"/>
@@ -46,8 +46,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.97254925966262817" green="0.92851903873511055" blue="0.64028852459233088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dtG-Vt-wft" secondAttribute="trailing" constant="20" id="BTr-bL-hhV"/>
                             <constraint firstItem="dtG-Vt-wft" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cw7-t0-YiO"/>
                             <constraint firstItem="dtG-Vt-wft" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fQm-Ws-5Vm"/>
+                            <constraint firstItem="dtG-Vt-wft" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="lVP-wg-rvh"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -64,12 +66,12 @@
                         <viewControllerLayoutGuide type="bottom" id="1Zd-zN-cps"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="APq-0t-e7y">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc7-6m-d0v">
-                                <rect key="frame" x="44.5" y="424" width="325" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <rect key="frame" x="56.5" y="314.5" width="262" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -94,12 +96,12 @@
                         <viewControllerLayoutGuide type="bottom" id="7wJ-py-Is8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U4L-JV-Raq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9J-TJ-xne">
-                                <rect key="frame" x="16" y="424" width="382" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <rect key="frame" x="34" y="314.5" width="307.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
