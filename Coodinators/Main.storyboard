@@ -27,6 +27,9 @@
                                         <buttonConfiguration key="configuration" style="gray" title="FirstViewController" cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="FirstViewControllerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfm-Lr-BWX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zm-nz-Rp9">
                                         <rect key="frame" x="0.0" y="72.5" width="331.5" height="52.5"/>
@@ -34,6 +37,9 @@
                                         <buttonConfiguration key="configuration" style="gray" title="SecondViewController" cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="SecondViewControllerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZG-fr-4AH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
