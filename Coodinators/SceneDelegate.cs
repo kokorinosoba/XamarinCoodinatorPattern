@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using Coodinators;
+using Foundation;
 using UIKit;
 
 namespace NewSingleViewTemplate
@@ -9,6 +10,7 @@ namespace NewSingleViewTemplate
 
         [Export("window")]
         public UIWindow? Window { get; set; }
+        public MainCoodinator? Coodinator;
 
         [Export("scene:willConnectToSession:options:")]
         public void WillConnect(UIScene scene, UISceneSession session, UISceneConnectionOptions connectionOptions)
@@ -16,6 +18,18 @@ namespace NewSingleViewTemplate
             // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
             // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
             // This delegate does not imply the connecting scene or session are new (see UIApplicationDelegate `GetConfiguration` instead).
+
+            if (scene is not UIWindowScene windowScene)
+                return;
+
+            Window = new UIWindow(windowScene: windowScene);
+            Window.MakeKeyAndVisible();
+
+            UINavigationController navigationController = new();
+            Coodinator = new MainCoodinator(navigationController: navigationController);
+            Coodinator.Start();
+
+            Window.RootViewController = navigationController;
         }
 
         [Export("sceneDidDisconnect:")]
