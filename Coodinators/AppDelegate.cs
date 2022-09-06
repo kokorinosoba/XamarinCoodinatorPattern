@@ -10,7 +10,7 @@ namespace Coodinators
     {
 
         [Export("window")]
-        public UIWindow Window { get; set; }
+        public UIWindow? Window { get; set; }
 
         [Export("application:didFinishLaunchingWithOptions:")]
         public bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
