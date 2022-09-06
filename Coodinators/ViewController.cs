@@ -1,4 +1,5 @@
 ﻿using System;
+using Foundation;
 using UIKit;
 
 namespace Coodinators
@@ -21,6 +22,16 @@ namespace Coodinators
         {
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
+        }
+
+        partial void FirstViewControllerTapped(NSObject sender)
+        {
+            ((ICoodinatedViewController)this).Coodinator.FirstViewController();
+        }
+
+        partial void SecondViewControllerTapped(NSObject sender)
+        {
+            ((ICoodinatedViewController)this).Coodinator.FirstViewController();
         }
     }
 }
