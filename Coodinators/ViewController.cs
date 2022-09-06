@@ -5,7 +5,7 @@ namespace Coodinators
 {
     public partial class ViewController : UIViewController, ICoodinatedViewController
     {
-        public WeakReference<MainCoodinator>? Coodinator { get; set; }
+        WeakReference<MainCoodinator>? ICoodinatedViewController._weakCoodinator { get; set; }
 
         public ViewController(IntPtr handle) : base(handle)
         {

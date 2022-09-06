@@ -5,7 +5,7 @@ namespace Coodinators
 {
     public partial class FirstViewController : UIViewController, ICoodinatedViewController
     {
-        public WeakReference<MainCoodinator>? Coodinator { get; set; }
+        WeakReference<MainCoodinator>? ICoodinatedViewController._weakCoodinator { get; set; }
 
         public FirstViewController(IntPtr handle) : base(handle)
         {
