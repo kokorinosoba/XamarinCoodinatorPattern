@@ -142,6 +142,7 @@
 		<Compile Include="ICoodinator.cs" />
 		<Compile Include="IStoryboarded.cs" />
 		<Compile Include="StoryboardedExtension.cs" />
+		<Compile Include="MainCoodinator.cs" />
 	</ItemGroup>
 	<Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
